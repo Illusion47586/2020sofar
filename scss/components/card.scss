@@ -72,21 +72,21 @@
     &::after {
       content: '';
       height: 20px;
-      width: 280px;
+      width: 220px;
       background-color: rgba($primary-color, .7);
       // background-color: $accent-color;
       border-radius: 25px;
       box-shadow: $shadow-image;
       position: absolute;
       left: 50%;
-      bottom: -10%;
+      bottom: -3%;
       transform: translate(-50%);
       z-index: -10;
-      -webkit-filter: blur(40px);
-      -moz-filter: blur(40px);
-      -o-filter: blur(40px);
-      -ms-filter: blur(40px);
-      filter: blur(40px);
+      -webkit-filter: blur(30px);
+      -moz-filter: blur(30px);
+      -o-filter: blur(30px);
+      -ms-filter: blur(30px);
+      filter: blur(30px);
     }
   }
 }
