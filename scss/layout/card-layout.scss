@@ -25,7 +25,14 @@
 
 @media (max-width: 750px) {
   .container{
+    width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }

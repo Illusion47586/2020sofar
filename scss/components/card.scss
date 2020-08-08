@@ -47,7 +47,7 @@
   }
 
   &:focus,
-  &:hover {
+  &:hover,&:active {
     background-color: $primary-color;
     border: $border-hover;
     transform: translateY(-5px);
@@ -71,14 +71,16 @@
     // FOR THAT CUSTOM SHADOW ON HOVER
     &::after {
       content: '';
-      height: 30px;
-      width: 200px;
-      background-color: rgba($primary-color, .9);
+      height: 20px;
+      width: 280px;
+      background-color: rgba($primary-color, .7);
       // background-color: $accent-color;
-      border-radius: 32px;
+      border-radius: 25px;
       box-shadow: $shadow-image;
       position: absolute;
-      transform: translateY(350px);
+      left: 50%;
+      bottom: -10%;
+      transform: translate(-50%);
       z-index: -10;
       -webkit-filter: blur(40px);
       -moz-filter: blur(40px);
@@ -94,14 +96,14 @@
   .card-container {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: row;
     // height: 150px;
     width: 300px;
     background-color: $white-color;
     border: $border;
     border-radius: 25px;
-    transition: all 0.4s ease-in-out;
+    transition: all .4s ease-in-out;
     min-width: 0;
 
     .image {
@@ -116,7 +118,7 @@
     }
 
     .headline-container {
-      height: calc(150px - 16px);
+      // height: calc(150px - 16px);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -142,5 +144,49 @@
       color: $muted-text-color;
       transition: all 0.4s ease-in-out;
     }
-  }
+
+  &:focus,
+  &:hover,&:active {
+    background-color: $primary-color;
+    border: $border-hover;
+    transform: translateY(-5px);
+
+    .image {
+      box-shadow: none;
+      margin-top: 16px;
+      height: 118px;
+      width: 118px;
+      border-radius: 22px;
+    }
+
+    .headline {
+      color: $white-color;
+    }
+
+    .timing {
+      font-weight: 500;
+      color: $accent-color;
+    }
+
+    // FOR THAT CUSTOM SHADOW ON HOVER
+    &::after {
+      content: '';
+      height: 30px;
+      width: 250px;
+      background-color: rgba($primary-color, .7);
+      // background-color: $accent-color;
+      border-radius: 25px;
+      box-shadow: $shadow-image;
+      position: absolute;
+      left: 50%;
+      bottom: -10%;
+      transform: translate(-50%);
+      z-index: -10;
+      -webkit-filter: blur(20px);
+      -moz-filter: blur(20px);
+      -o-filter: blur(20px);
+      -ms-filter: blur(20px);
+      filter: blur(20px);
+    }
+  }}
 }
