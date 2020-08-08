@@ -102,7 +102,7 @@
     width: 300px;
     background-color: $white-color;
     border: $border;
-    border-radius: 25px;
+    border-radius: 22px;
     transition: all .4s ease-in-out;
     min-width: 0;
 
@@ -112,7 +112,7 @@
       box-shadow: $shadow-image;
       min-height: 118px;
       min-width: 118px;
-      border-radius: 18px;
+      border-radius: 16px;
       margin: 16px;
       transition: all 0.4s ease-in-out;
     }
@@ -156,7 +156,7 @@
       margin-top: 16px;
       height: 118px;
       width: 118px;
-      border-radius: 22px;
+      border-radius: 16px;
     }
 
     .headline {
@@ -175,7 +175,7 @@
       width: 250px;
       background-color: rgba($primary-color, .7);
       // background-color: $accent-color;
-      border-radius: 25px;
+      border-radius: 22px;
       box-shadow: $shadow-image;
       position: absolute;
       left: 50%;
