@@ -1,0 +1,94 @@
+.month-name {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: left;
+}
+
+.twenty-twenty {
+  font-weight: 400;
+  font-size: 360px;
+}
+
+.sub-line {
+  font-weight: 500;
+  font-size: 23px;
+}
+
+.highlight {
+  font-weight: 500;
+  font-size: 23px;
+  color: $accent-color;
+}
+
+.link-text {
+  font-weight: 500;
+  font-size: 25px;
+  color: $accent-color;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+
+  &:hover, &:visited, &:active {
+    font-weight: 500;
+    font-size: 25px;
+    color: $accent-color;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1200px) {
+  .twenty-twenty {
+    font-size: 280px;
+  }
+
+  .sub-line {
+    font-size: 20px;
+  }
+
+  .highlight {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .twenty-twenty {
+    font-size: 220px;
+  }
+
+  .sub-line {
+    font-size: 18px;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
+
+  .month-name {
+    text-align: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .twenty-twenty {
+    font-size: 100px;
+  }
+
+  .sub-line {
+    font-size: 12px;
+  }
+
+  .highlight {
+    font-size: 12px;
+  }
+
+  .month-name {
+    text-align: center;
+  }
+
+  .link-text {
+    font-size: 22px;
+
+    &:hover, &:visited, &:active {
+      font-size: 22px;
+    }
+  }
+}

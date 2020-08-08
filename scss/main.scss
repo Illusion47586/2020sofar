@@ -1,0 +1,29 @@
+@import "constants";
+@import "components/card";
+@import "layout/card-layout";
+@import "layout/header-layout";
+@import "utility/center";
+@import "typography/typography";
+@import "components/footer";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $primary-color;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

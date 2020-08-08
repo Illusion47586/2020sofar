@@ -1,0 +1,140 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  // height: $card-height;
+  width: $card-width;
+  background-color: $white-color;
+  border: $border;
+  border-radius: 32px;
+  transition: all 0.4s ease-in-out;
+  min-width: 0;
+
+  .image {
+    background-image: url("../assets/images/hongkong.jpg");
+    background-size: cover;
+    box-shadow: $shadow-image;
+    min-height: $image-side;
+    min-width: $image-side;
+    border-radius: 25px;
+    margin-top: $image-margin;
+    margin-bottom: 23px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .headline-container {
+    width: $image-side;
+  }
+
+  .headline {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: $primary-color;
+    line-height: 25px;
+    padding-bottom: 7px;
+    margin: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .timing {
+    font-weight: 400;
+    font-size: 12px;
+    color: $muted-text-color;
+    margin-bottom: $image-margin;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $primary-color;
+    border: $border-hover;
+    transform: translateY(-5px);
+
+    .image {
+      box-shadow: none;
+      margin-top: $image-margin-hover;
+      height: $image-side-hover;
+      width: $image-side-hover;
+      border-radius: 22px;
+    }
+
+    .headline {
+      color: $white-color;
+    }
+
+    .timing {
+      font-weight: 500;
+      color: $accent-color;
+    }
+
+// FOR THAT CUSTOM SHADOW ON HOVER
+    &::after {
+      content: '';
+      height: 30px;
+      width: 200px;
+      background-color: rgba($primary-color, .9);
+      // background-color: $accent-color;
+      border-radius: 32px;
+      box-shadow: $shadow-image;
+      position: absolute;
+      transform: translateY(380px);
+      z-index: -10;
+      -webkit-filter: blur(40px);
+      -moz-filter: blur(40px);
+      -o-filter: blur(40px);
+      -ms-filter: blur(40px);
+      filter: blur(40px);
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .card-container {
+    width: $card-width;
+    border-radius: 28px;
+
+    .image {
+      min-height: $image-side;
+      min-width: $image-side;
+      border-radius: 20px;
+      margin-top: $image-margin;
+      margin-bottom: 23px;
+    }
+
+    .headline-container {
+      width: $image-side;
+    }
+
+    &:focus,
+    &:hover {
+
+      .image {
+        margin-top: $image-margin-hover;
+        height: $image-side-hover;
+        width: $image-side-hover;
+        border-radius: 18px;
+      }
+
+  // FOR THAT CUSTOM SHADOW ON HOVER
+      &::after {
+        content: '';
+        height: 30px;
+        width: 200px;
+        background-color: rgba($primary-color, .9);
+        // background-color: $accent-color;
+        border-radius: 32px;
+        box-shadow: $shadow-image;
+        position: absolute;
+        transform: translateY(340px);
+        z-index: -10;
+        -webkit-filter: blur(40px);
+        -moz-filter: blur(40px);
+        -o-filter: blur(40px);
+        -ms-filter: blur(40px);
+        filter: blur(40px);
+      }
+    }
+  }
+}

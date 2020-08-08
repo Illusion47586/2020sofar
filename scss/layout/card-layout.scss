@@ -1,0 +1,31 @@
+//CARD LAYOUT
+
+.container {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  // grid-template-rows: repeat(3, auto);
+  grid-gap: 40px 50px;
+  min-height: 0;  /* NEW */
+   min-width: 0;
+}
+
+//MONTH layout
+
+.month {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1100px) {
+  .container{
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 750px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}

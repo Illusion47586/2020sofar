@@ -1,0 +1,21 @@
+//COLORS
+$white-color: #ffffff;
+$primary-color: #00092D;
+$accent-color: #FF8B8B;
+$muted-color: #e5e5e5;
+$muted-text-color: rgba(0,0,0,.6);
+
+//BORDER
+$border: 2px solid $muted-color;
+$border-hover: 2px solid $primary-color;
+
+//SHADOW
+$shadow-image: 0 20px 60px rgba($primary-color, .12);
+
+//DIMENSIONS
+$card-height: 350px;
+$card-width: 280px;
+$image-side: 253px;
+$image-side-hover: 248px;
+$image-margin: 14px;
+$image-margin-hover: 16px;
