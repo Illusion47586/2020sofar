@@ -36,7 +36,7 @@
 @media (max-width: 1100px) { .container { grid-template-columns: repeat(2, auto); } }
 
 @media (max-width: 750px) { .container { width: 100vw; display: flex; justify-content: center; align-items: center; flex-direction: column; }
-  .container:not(:last-child) { margin-bottom: 30px; } }
+  .container:not(:last-child) { margin-bottom: 30px; padding-bottom: 30px; } }
 
 .header { height: 95vh; width: 100vw; background-color: #ffffff; display: flex; justify-content: flex-end; align-items: center; flex-direction: column; }
 
