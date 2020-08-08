@@ -115,6 +115,8 @@
       border-radius: 16px;
       margin: 16px;
       transition: all 0.4s ease-in-out;
+
+      align-self: stretch;
     }
 
     .headline-container {
@@ -153,9 +155,11 @@
 
     .image {
       box-shadow: none;
+      align-self: stretch;
       margin-top: 16px;
-      height: 118px;
-      width: 118px;
+      height: auto;
+      // min-height: 118px;
+      width: auto;
       border-radius: 16px;
     }
 

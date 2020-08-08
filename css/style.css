@@ -110,6 +110,7 @@
     border-radius: 16px;
     margin: 16px;
     transition: all 0.4s ease-in-out;
+    align-self: stretch;
   }
   .card-container .headline-container {
     display: flex;
@@ -142,9 +143,10 @@
   }
   .card-container:focus .image, .card-container:hover .image, .card-container:active .image {
     box-shadow: none;
+    align-self: stretch;
     margin-top: 16px;
-    height: 118px;
-    width: 118px;
+    height: auto;
+    width: auto;
     border-radius: 16px;
   }
   .card-container:focus .headline, .card-container:hover .headline, .card-container:active .headline {
