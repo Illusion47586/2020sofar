@@ -77,7 +77,7 @@
   border-radius: 32px;
   box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12);
   position: absolute;
-  transform: translateY(380px);
+  transform: translateY(350px);
   z-index: -10;
   -webkit-filter: blur(40px);
   -moz-filter: blur(40px);
@@ -86,42 +86,53 @@
   filter: blur(40px);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 420px) {
   .card-container {
-    width: 280px;
-    border-radius: 28px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 300px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 25px;
+    transition: all 0.4s ease-in-out;
+    min-width: 0;
   }
   .card-container .image {
-    min-height: 253px;
-    min-width: 253px;
-    border-radius: 20px;
-    margin-top: 14px;
-    margin-bottom: 23px;
+    background-image: url("../assets/images/hongkong.jpg");
+    background-size: cover;
+    box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12);
+    min-height: 118px;
+    min-width: 118px;
+    border-radius: 18px;
+    margin: 16px;
+    transition: all 0.4s ease-in-out;
   }
   .card-container .headline-container {
-    width: 253px;
+    height: calc(150px - 16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-right: 16px;
   }
-  .card-container:focus .image, .card-container:hover .image {
-    margin-top: 16px;
-    height: 248px;
-    width: 248px;
-    border-radius: 18px;
+  .card-container .headline {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    color: #00092D;
+    line-height: 20px;
+    padding-bottom: 7px;
+    margin: 0;
+    transition: all 0.4s ease-in-out;
   }
-  .card-container:focus::after, .card-container:hover::after {
-    content: '';
-    height: 30px;
-    width: 200px;
-    background-color: rgba(0, 9, 45, 0.9);
-    border-radius: 32px;
-    box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12);
-    position: absolute;
-    transform: translateY(340px);
-    z-index: -10;
-    -webkit-filter: blur(40px);
-    -moz-filter: blur(40px);
-    -o-filter: blur(40px);
-    -ms-filter: blur(40px);
-    filter: blur(40px);
+  .card-container .timing {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease-in-out;
   }
 }
 
@@ -161,7 +172,7 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .sub-container {

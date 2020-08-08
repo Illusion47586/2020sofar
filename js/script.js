@@ -73,12 +73,12 @@ request.onload = function() {
       const timing = document.createElement('p');
       timing.setAttribute('class', 'timing');
       timing.innerText = capitalize(months[i]) + " " + data[months[i]][j].date;
+      headLineContainer.appendChild(timing);
 
       console.log("date: " + capitalize(months[i]) + " " + data[months[i]][j].date);
 
       card.appendChild(image);
       card.appendChild(headLineContainer);
-      card.appendChild(timing);
 
       anchor.appendChild(card);
 
