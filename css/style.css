@@ -136,12 +136,12 @@
     color: rgba(0, 0, 0, 0.6);
     transition: all 0.4s ease-in-out;
   }
-  .card-container:focus, .card-container:hover, .card-container:active {
+  .card-container:visited, .card-container:hover, .card-container:active {
     background-color: #00092D;
     border: 2px solid #00092D;
     transform: translateY(-5px);
   }
-  .card-container:focus .image, .card-container:hover .image, .card-container:active .image {
+  .card-container:visited .image, .card-container:hover .image, .card-container:active .image {
     box-shadow: none;
     align-self: stretch;
     margin-top: 16px;
@@ -149,14 +149,14 @@
     width: auto;
     border-radius: 16px;
   }
-  .card-container:focus .headline, .card-container:hover .headline, .card-container:active .headline {
+  .card-container:visited .headline, .card-container:hover .headline, .card-container:active .headline {
     color: #ffffff;
   }
-  .card-container:focus .timing, .card-container:hover .timing, .card-container:active .timing {
+  .card-container:visited .timing, .card-container:hover .timing, .card-container:active .timing {
     font-weight: 500;
     color: #FF8B8B;
   }
-  .card-container:focus::after, .card-container:hover::after, .card-container:active::after {
+  .card-container:visited::after, .card-container:hover::after, .card-container:active::after {
     content: '';
     height: 30px;
     width: 250px;
@@ -198,6 +198,20 @@
 }
 
 @media (max-width: 750px) {
+  .container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container:not(:last-child) {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 450px) {
   .container {
     width: 100vw;
     display: flex;
@@ -335,6 +349,16 @@
 .form {
   margin-top: 30px;
   color: #09ada8;
+}
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {

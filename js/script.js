@@ -32,8 +32,9 @@ request.onload = function() {
 
   for (var i = 0; i < Object.keys(data).length; i++) {
 
-    const monthContainer = document.createElement('div');
+    const monthContainer = document.createElement('section');
     monthContainer.setAttribute('class', 'month');
+    monthContainer.setAttribute('id', months[i]);
 
     const container = document.createElement('div');
     container.setAttribute('class', 'container');
@@ -49,6 +50,7 @@ request.onload = function() {
 
       const anchor = document.createElement('a');
       anchor.setAttribute('href', data[months[i]][j].newsLink);
+      anchor.setAttribute('class', 'noSelect');
 
       const card = document.createElement('div');
       card.setAttribute('class', 'card-container');
