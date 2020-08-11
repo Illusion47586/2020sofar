@@ -242,8 +242,11 @@
 
 @media (max-width: 530px) {
   .gif {
-    width: 90vw;
+    width: 75vw;
     height: auto;
+  }
+  .header {
+    width: 90vw;
   }
 }
 
