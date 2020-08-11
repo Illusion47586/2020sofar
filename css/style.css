@@ -248,6 +248,9 @@
   .header {
     width: 90vw;
   }
+  .sub-container {
+    padding: 0;
+  }
 }
 
 .center-absolute {
