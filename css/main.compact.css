@@ -41,9 +41,11 @@
 @media (max-width: 450px) { .container { width: 100vw; display: flex; justify-content: center; align-items: center; flex-direction: column; }
   .container:not(:last-child) { margin-bottom: 30px; padding-bottom: 30px; } }
 
-.header { height: 95vh; width: 100vw; background-color: #ffffff; display: flex; justify-content: flex-end; align-items: center; flex-direction: column; }
+.header { height: 95vh; width: 95vw; background-color: #ffffff; display: flex; justify-content: flex-end; align-items: center; flex-direction: column; }
 
-.sub-container { padding: 20px; max-width: 90vw; }
+.sub-container { padding: 20px; max-width: 85vw; }
+
+@media (max-width: 530px) { .gif { width: 90vw; height: auto; } }
 
 .center-absolute { position: absolute; top: 50%; /* position the top  edge of the element at the middle of the parent */ left: 50%; /* position the left edge of the element at the middle of the parent */ transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */ }
 

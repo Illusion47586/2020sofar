@@ -227,7 +227,7 @@
 
 .header {
   height: 95vh;
-  width: 100vw;
+  width: 95vw;
   background-color: #ffffff;
   display: flex;
   justify-content: flex-end;
@@ -237,7 +237,14 @@
 
 .sub-container {
   padding: 20px;
-  max-width: 90vw;
+  max-width: 85vw;
+}
+
+@media (max-width: 530px) {
+  .gif {
+    width: 90vw;
+    height: auto;
+  }
 }
 
 .center-absolute {

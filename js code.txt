@@ -1,0 +1,33 @@
+var months = [
+  "january",
+  "february",
+  "march",
+  "april",
+  "may",
+  "june",
+  "july",
+  "august",
+  "september",
+  "october",
+  "november",
+  "december",
+];
+
+var url =
+  "https://script.google.com/macros/s/AKfycbwjc7Tzm7xAGKusV4L5vqArR2LXIfBQnNjv3ZX9MQEK5OCRSQc/exec";
+
+var request = new XMLHttpRequest();
+
+request.open("GET", url, true);
+request.onload = function () {
+  // Begin accessing JSON data here
+  var data = JSON.parse(this.response);
+  console.log("got the data!");
+
+  for (var i = 0; i < Object.keys(data).length; i++) {
+    console.log(months[i]);
+    console.log(data[months[i]][0].event);
+  }
+};
+
+request.send();
