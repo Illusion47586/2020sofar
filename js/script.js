@@ -55,9 +55,12 @@ request.onload = function() {
       const card = document.createElement('div');
       card.setAttribute('class', 'card-container');
 
-      const image = document.createElement('div');
+      // const image = document.createElement('div');
+      // image.setAttribute('style', 'background-image: url(' + data[months[i]][j].imageLink + ')');
+      const image = document.createElement('img');
+      image.setAttribute('src', data[months[i]][j].imageLink);
+      image.setAttribute('loading', 'lazy');
       image.setAttribute('class', 'image');
-      image.setAttribute('style', 'background-image: url(' + data[months[i]][j].imageLink + ')');
 
       console.log("background image found!");
 
