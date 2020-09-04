@@ -1,5 +1,6 @@
 /*jshint esversion: 6 */
 
+
 var months = [
   "january",
   "february",
@@ -46,8 +47,6 @@ request.onload = function() {
 
     for (var j = 0; j < Object.keys(data[months[i]]).length; j++) {
 
-      console.log("starting");
-
       const anchor = document.createElement('a');
       anchor.setAttribute('href', data[months[i]][j].newsLink);
       anchor.setAttribute('class', 'noSelect');
@@ -55,11 +54,16 @@ request.onload = function() {
       const card = document.createElement('div');
       card.setAttribute('class', 'card-container');
 
-      const image = document.createElement('div');
+      // const image = document.createElement('div');
+      // image.setAttribute('style', 'background-image: url(' + data[months[i]][j].imageLink + ')');
+      const image = document.createElement('img');
+      if (data[months[i]][j].imageLink) {
+        image.setAttribute('src', data[months[i]][j].imageLink);
+      }
+      image.setAttribute('loading', 'lazy');
       image.setAttribute('class', 'image');
-      image.setAttribute('style', 'background-image: url(' + data[months[i]][j].imageLink + ')');
 
-      console.log("background image found!");
+      // console.log(data[months[i]][j].imageLink);
 
       const headLineContainer = document.createElement('div');
       headLineContainer.setAttribute('class', 'headline-container');
@@ -68,8 +72,6 @@ request.onload = function() {
       headLine.setAttribute('class', 'headline');
       headLine.innerText = data[months[i]][j].event;
 
-      console.log("event: " + data[months[i]][j].event);
-
       headLineContainer.appendChild(headLine);
 
       const timing = document.createElement('p');
@@ -77,7 +79,7 @@ request.onload = function() {
       timing.innerText = capitalize(months[i]) + " " + data[months[i]][j].date;
       headLineContainer.appendChild(timing);
 
-      console.log("date: " + capitalize(months[i]) + " " + data[months[i]][j].date);
+      // console.log("date: " + capitalize(months[i]) + " " + data[months[i]][j].date);
 
       card.appendChild(image);
       card.appendChild(headLineContainer);

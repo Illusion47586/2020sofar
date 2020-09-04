@@ -12,11 +12,15 @@
   min-width: 0;
 
   .image {
-    background-image: url("../assets/images/hongkong.jpg");
+    object-fit: cover;
+    object-position: center;
+    background-image: url("../assets/gifs/loading-large.gif");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: $shadow-image;
-    min-height: $image-side;
-    min-width: $image-side;
+    height: $image-side;
+    width: $image-side;
     border-radius: 25px;
     margin-top: $image-margin;
     margin-bottom: 23px;
@@ -107,10 +111,16 @@
     min-width: 0;
 
     .image {
-      background-image: url("../assets/images/hongkong.jpg");
+      object-fit: cover;
+      object-position: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../assets/gifs/loading-small.gif");
       background-size: cover;
       box-shadow: $shadow-image;
+      height: auto;
       min-height: 118px;
+      width: 118px;
       min-width: 118px;
       border-radius: 16px;
       margin: 16px;
@@ -158,8 +168,11 @@
       align-self: stretch;
       margin-top: 16px;
       height: auto;
-      // min-height: 118px;
-      width: auto;
+      min-height: 118px;
+      width: 118px;
+      // height: auto;
+      // // min-height: 118px;
+      // width: auto;
       border-radius: 16px;
     }
 

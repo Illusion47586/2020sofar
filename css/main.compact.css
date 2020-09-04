@@ -1,6 +1,6 @@
 .card-container { display: flex; justify-content: space-between; align-items: center; flex-direction: column; width: 280px; background-color: #ffffff; border: 2px solid #e5e5e5; border-radius: 32px; transition: all 0.4s ease-in-out; min-width: 0; }
 
-.card-container .image { background-image: url("../assets/images/hongkong.jpg"); background-size: cover; box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12); min-height: 253px; min-width: 253px; border-radius: 25px; margin-top: 14px; margin-bottom: 23px; transition: all 0.4s ease-in-out; }
+.card-container .image { object-fit: cover; object-position: center; background-image: url("../assets/gifs/loading-large.gif"); background-size: cover; background-position: center; background-repeat: no-repeat; box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12); height: 253px; width: 253px; border-radius: 25px; margin-top: 14px; margin-bottom: 23px; transition: all 0.4s ease-in-out; }
 
 .card-container .headline-container { width: 253px; }
 
@@ -19,12 +19,12 @@
 .card-container:focus::after, .card-container:hover::after, .card-container:active::after { content: ''; height: 20px; width: 220px; background-color: rgba(0, 9, 45, 0.7); border-radius: 25px; box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12); position: absolute; left: 50%; bottom: -3%; transform: translate(-50%); z-index: -10; -webkit-filter: blur(30px); -moz-filter: blur(30px); -o-filter: blur(30px); -ms-filter: blur(30px); filter: blur(30px); }
 
 @media (max-width: 420px) { .card-container { display: flex; justify-content: flex-start; align-items: stretch; flex-direction: row; width: 300px; background-color: #ffffff; border: 2px solid #e5e5e5; border-radius: 22px; transition: all .4s ease-in-out; min-width: 0; }
-  .card-container .image { background-image: url("../assets/images/hongkong.jpg"); background-size: cover; box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12); min-height: 118px; min-width: 118px; border-radius: 16px; margin: 16px; transition: all 0.4s ease-in-out; align-self: stretch; }
+  .card-container .image { object-fit: cover; object-position: center; background-position: center; background-repeat: no-repeat; background-image: url("../assets/gifs/loading-small.gif"); background-size: cover; box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12); height: auto; min-height: 118px; width: 118px; min-width: 118px; border-radius: 16px; margin: 16px; transition: all 0.4s ease-in-out; align-self: stretch; }
   .card-container .headline-container { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; padding-top: 16px; padding-right: 16px; }
   .card-container .headline { font-weight: 600; font-size: 15px; text-align: left; color: #00092D; line-height: 20px; padding-bottom: 7px; margin: 0; transition: all 0.4s ease-in-out; }
   .card-container .timing { font-weight: 400; font-size: 12px; color: rgba(0, 0, 0, 0.6); transition: all 0.4s ease-in-out; }
   .card-container:visited, .card-container:hover, .card-container:active { background-color: #00092D; border: 2px solid #00092D; transform: translateY(-5px); }
-  .card-container:visited .image, .card-container:hover .image, .card-container:active .image { box-shadow: none; align-self: stretch; margin-top: 16px; height: auto; width: auto; border-radius: 16px; }
+  .card-container:visited .image, .card-container:hover .image, .card-container:active .image { box-shadow: none; align-self: stretch; margin-top: 16px; height: auto; min-height: 118px; width: 118px; border-radius: 16px; }
   .card-container:visited .headline, .card-container:hover .headline, .card-container:active .headline { color: #ffffff; }
   .card-container:visited .timing, .card-container:hover .timing, .card-container:active .timing { font-weight: 500; color: #FF8B8B; }
   .card-container:visited::after, .card-container:hover::after, .card-container:active::after { content: ''; height: 30px; width: 250px; background-color: rgba(0, 9, 45, 0.7); border-radius: 22px; box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12); position: absolute; left: 50%; bottom: -10%; transform: translate(-50%); z-index: -10; -webkit-filter: blur(20px); -moz-filter: blur(20px); -o-filter: blur(20px); -ms-filter: blur(20px); filter: blur(20px); } }

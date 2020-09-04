@@ -12,11 +12,15 @@
 }
 
 .card-container .image {
-  background-image: url("../assets/images/hongkong.jpg");
+  object-fit: cover;
+  object-position: center;
+  background-image: url("../assets/gifs/loading-large.gif");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12);
-  min-height: 253px;
-  min-width: 253px;
+  height: 253px;
+  width: 253px;
   border-radius: 25px;
   margin-top: 14px;
   margin-bottom: 23px;
@@ -102,10 +106,16 @@
     min-width: 0;
   }
   .card-container .image {
-    background-image: url("../assets/images/hongkong.jpg");
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../assets/gifs/loading-small.gif");
     background-size: cover;
     box-shadow: 0 20px 60px rgba(0, 9, 45, 0.12);
+    height: auto;
     min-height: 118px;
+    width: 118px;
     min-width: 118px;
     border-radius: 16px;
     margin: 16px;
@@ -146,7 +156,8 @@
     align-self: stretch;
     margin-top: 16px;
     height: auto;
-    width: auto;
+    min-height: 118px;
+    width: 118px;
     border-radius: 16px;
   }
   .card-container:visited .headline, .card-container:hover .headline, .card-container:active .headline {
